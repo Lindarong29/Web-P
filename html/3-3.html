@@ -7,29 +7,35 @@
     <title>example 3-3</title>
 </head>
 <body>
-    <table border="1">
-        <tr>
-            <th>no.</th>
-            <th>name</th>
+    <table border="1"> <!-- 표의 굵기 설정 -->
+        <tr> <!--첫 번째 줄-->
+            <th>no.</th> <!--첫 번째 칸, 굵게-->
+            <th>name</th> <!--두 번째 칸, 굵게-->
             <th>email</th>
             <th>tel</th>
         </tr>
-        <tr>
-            <td>1</td>
+
+        <tr> <!--두 번째 줄-->
+            <td>1</td> <!-- 첫 번째 칸-->
             <td>James Kang</td>
             <td colspan="2">james@gachon.ac.kr, 010-1234-1234</td>>
+            <!-- 가로로 두 칸 합쳐서 > 내용 -->
         </tr>
-        <tr>
-            <td rowspan="2">2</td>
-            <td>Justin Born</td>
+
+        <tr> <!--세 번째 줄-->
+            <td rowspan="2">2</td> <!--세로로 두 칸 합쳐서 > 내용-->
+            <td>Justin Born</td> <!-- 세 번째 줄 두 번째 칸-->
             <td>justin@google.com</td>
             <td>010-9876-1234</td>
         </tr>
-         <tr>
-                <td>Mariata Kumba</td>
+
+         <tr> <!--네 번째 줄-->
+                <!-- 위에서 세로로 두 칸 합쳤으니 첫 째 칸은 없음-->
+                <td>Mariata Kumba</td><!-- 네 번째 줄 두 번째 칸-->
                 <td>kumba@amazon.com</td>
                 <td>010-2222-3333</td>
             </tr>
+            
             <tr>
                 <td>4</td>
                 <td>Mola Landa</td>
