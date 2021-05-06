@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2-5 CSS text/image align</title>
+
+  <style>
+    h2 {
+      text-align: center;
+      /*text 좌우 정렬*/
+    }
+    
+    .img-middle{
+      vertical-align: middle;
+       /*text 수직 정렬*/
+      margin: 10px;
+    }
+
+    .img-top {
+      vertical-align: top;
+      margin: 10px;
+    }
+
+    .img-bottom {
+      vertical-align: bottom;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>CSS text-image align</h2>
+    <!-- text 중앙정렬-->
+
+  vertical-align:top <img class="img-top" src="http://via.placeholder.com/50x50"><br>
+    <!-- text 이미지 위 정렬-->
+  
+  vertical-align:middle <img class="img-middle" src="http://via.placeholder.com/50x50"><br> 
+    <!-- text 이미지 중앙 정렬-->  
+
+  vertical-align:bottom <img class="img-bottom" src="http://via.placeholder.com/50x50"><br>
+    <!-- text 이미지 아래 정렬-->  
+</body>
+</html>
