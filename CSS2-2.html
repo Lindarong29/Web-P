@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2-2 Basic Selector Combination</title>
+
+  <style>
+    .header {
+      color : red;
+    }
+
+    div.header {
+      color: blue;
+    }
+
+    h1,
+    h2 {
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <p class="header"> text-1</p> 
+    <!--header 클래스 적용 (red)-->
+
+  <div>text-2</div>
+    <!--스타일 적용 X-->
+
+  <div class="header">text-3</div>
+    <!--div.header 적용(blue)-->
+
+  <div>
+    <h1>text-4</h1>
+  </div>
+    <!--h1 셀렉터 적용(green)-->
+
+  <div class="header">
+    <h1>text-5</h1>
+  </div>
+    <!--div.header 보다 h1이 더 아래 속성이므로-->
+    <!--h1 셀렉터 적용(green)-->
+
+  <h2>text-6</h2>
+    <!--h2 셀렉터 적용(green)-->
+</body>
+</html>
