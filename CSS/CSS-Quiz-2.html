@@ -6,25 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Quiz-2</title>
     <style>
-        .titletext{
+        a:link {
+            color: black;
+            background-color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: white;
+            background-color: black;
+            text-decoration: none;
+        }
+
+        a:active {
+        background-color: gray;
+        text-decoration: underline;
+        }
+        
+
+        .header{
+            width : 100%;
+            background-color : #B8D0E2;
+            border: 10px solid #B8D0E2;
+            margin: 0px 0px 50px 0px;
+            padding: 30px;
+            box-sizing: border-box;
+
+            /*Font*/
             font-family : "Times New Roman",serif;
             text-align : center;
             font-weight: bold;
             font-size: 2em;
+            float: left;
+            position:fixed;
+            z-index: 1;
         }
 
-        .header{
-            width : 100%;
-            height : 10em;
-            background-color : #B8D0E2;
-/*             z-index: 1; */
-            position:fixed;
+        .sidebox{
+            float: left;
+            height: 100%;
+            box-sizing: border-box;
+            border : 5px solid none;
+            padding: 1px 20px;
+            position: fixed;
+            top: 180px;
+            left : 30px;    
+            background-color: white;
+            border : 5px solid grey;
+            width: 20%;
+            padding: 5px 5px;
         }
 
         .side{
-/*             float: left; */
-            position:fixed;
             background-color : lightgrey;
+            
+        }
+
+        .menu{
+            list-style : none;
+            font-family : "Times New Roman",serif;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        .contentsbox{
+            box-sizing: border-box;
+            border: 3px solid black;
+        }
+
+        .contents{
+            float: left;
+            width : 60%;
+            box-sizing: border-box;
+            background-color : lightgray;
+            font-family : "Times New Roman",serif;
+            font-weight: bold;
+            margin: 20px 20px 30px 50px;
+            border: 3px solid black;
+            padding: 20px 20px;
         }
     </style>
 
@@ -33,17 +92,37 @@
 <body>
     <div class="container">
         <div class="header">
-            <p class="titletext">
                 CSS Quiz-2
-            </p>
         </div>
 
-        <div class="side">
-            <ul>
-                <li>menu1</li>
-                <li>menu2</li>
-                <li>menu3</li>
+        <div class="sidebox">
+            <div class="side">
+            <ul class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Menu 1</a></li>
+                <li><a href="">Menu 2</a></li>
+                <li><a href="">Menu 3</a></li>
             </ul>
+            </div>
+        </div>
+
+        <div class="contentbox">
+            <P class="contents">
+                Department : Electronic Engineering <br>
+                Student Name : Lee Da Hye <br>
+                Student ID : 201835867
+            </P>
+
+            <P class="contents"> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis mollis est, in mattis dolor facilisis sit amet. Etiam tempus ut neque vitae cursus. Nam pharetra id risus in luctus. Etiam commodo nulla ac risus lobortis, ut fermentum mauris sodales. Maecenas semper fermentum dolor. Aenean quam enim, blandit non tellus vitae, dignissim lacinia odio. Curabitur eu pulvinar nulla, sit amet dapibus dolor. Fusce posuere molestie mi non hendrerit. Curabitur eget diam in turpis euismod tristique. Nullam et lacus ut sapien euismod ornare sed eget diam. Phasellus cursus eros non ex laoreet luctus. Suspendisse ex mauris, aliquam id porta vitae, pretium hendrerit augue.
+                Duis in pretium dolor, a eleifend purus. Sed convallis nunc ut erat pharetra interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eleifend mi non arcu finibus porta. Proin sodales velit a lorem tempus euismod. Aenean gravida rhoncus justo sit amet pretium. Donec pulvinar pharetra turpis et pretium. Morbi vel libero vitae elit faucibus ultricies. Praesent sed ex eu ligula porta accumsan porta et quam. In ultricies blandit tortor vel pretium. Nulla porttitor mi nec odio rhoncus varius.
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vel nisl eget mi sagittis vehicula. Maecenas vel luctus purus. In suscipit, enim ut cursus pellentesque, velit mauris vulputate justo, vitae placerat est augue ut odio. Nam pretium dictum varius. Nullam sagittis mollis placerat. Aenean euismod sagittis nisl.
+                Nunc magna neque, interdum ac orci varius, tempus rutrum sapien. Sed orci dolor, efficitur a tristique in, condimentum vel eros. In hac habitasse platea dictumst. Pellentesque ex justo, laoreet sed massa ut, blandit facilisis felis. Vestibulum ut bibendum diam. Aenean vel quam ipsum. Etiam tempus tempor ex, a eleifend metus tristique id. Nulla sapien arcu, ullamcorper vel odio vel, dignissim eleifend turpis.
+            </P>
+
+            <P class="contents"> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis mollis est, in mattis dolor facilisis sit amet. Etiam tempus ut neque vitae cursus. Nam pharetra id risus in luctus. Etiam commodo nulla ac risus lobortis, ut fermentum mauris sodales. Maecenas semper fermentum dolor. Aenean quam enim, blandit non tellus vitae, dignissim lacinia odio. Curabitur eu pulvinar nulla, sit amet dapibus dolor. Fusce posuere molestie mi non hendrerit. Curabitur eget diam in turpis euismod tristique. Nullam et lacus ut sapien euismod ornare sed eget diam. Phasellus cursus eros non ex laoreet luctus. Suspendisse ex mauris, aliquam id porta vitae, pretium hendrerit augue.
+            </P>
         </div>
     </div>
 </body>
