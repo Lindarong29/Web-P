@@ -1,0 +1,68 @@
+*{margin:0; padding:0;}
+li{list-style:none;}
+a{text-decoration:none; color:inherit;}
+body{background-color:#3c3a3a;}
+.clearfix:after{content:"";display:block;clear:both;}
+
+header{width:1100px;height:110px;
+        margin:0 auto;}
+
+/*반드시 무언가를 만들 때는 그 영역에 가로 세로값을 정확히 넣고,
+배경색을 넣어서 영역이 얼마만큼의 크기인지 눈으로 직접 확인하면서
+작업하는 게 좋다. (배경색은 작업 끝나고 빼면 되니까!)*/
+
+h1{ margin-top:30px;  float: left; }
+
+nav{ /*color: white; font-weight: 500; 얘는 nav li에 들어가야지. 
+        더 구체적인 애들한테 작성해주는 게 좋아. */
+     float: right; margin-top: 40px;
+}
+
+nav li {
+     float: left; margin-left: 20px;
+     color: white; font-weight: 600;
+}
+
+/*margin-top의 경우 어떤 태그의 첫 번째 태그한테 사용하면 
+대상 태그 대신에 부모태그가 대신 내려오는 특징이 있다.
+그래서 웹1과정에서는 margin-top 대신 padding-top 사용했는데
+★ 예외적으로 float가 들어간 태그한테 margin-top을 사용하면
+첫 번째 태그라고 해도 부모태그가 아니라 첫 번째 태그 당사자만 내려옴.*/
+
+.photo { background-image: url("img/bg.png"); }
+
+.photo img { margin: 0 auto; display: block; }
+
+main {  width:1100px;
+        height: 500px;
+        margin: 0 auto;
+        margin-top: 40px;}
+
+aside {
+        width: 300px; height: 500px;
+        background-color: black; color: white; 
+        text-align: center; line-height: 500px;
+        float: left; margin-right: 20px;
+}
+
+section { width: 780px; height: 500px;
+        float: left;
+        background-color:#000; }
+
+
+article {
+        width: 740px; height: 140px;
+        background-color:#3c3a3a ;
+        float: left; display: block;
+        margin : 0 auto; 
+        margin-top: 20px; margin-left: 20px;
+        color: white; text-align: center; line-height: 140px;
+}
+
+footer {
+        width: 1100px; height: 70px;
+        margin: 0 auto; margin-top: 40px;
+        background-color: #000; color: white;
+        text-align: center; line-height: 70px;
+        
+}
